@@ -50,17 +50,32 @@ html, body
   .wrap 
     width: 80%
 
-
+body 
+  position: relative
+.next 
+  position: absolute
+  bottom: 56px
+  left: 0%
+  flex-basis: 100%
+  height: max-content
+  width: max-content
+  cursor: pointer
+  z-index: 5
+@media (max-width: 800px)
+  .next 
+    display: none
 
 .container
   display: flex
   justify-content: space-between
   align-items: center
 .section 
-  .wrap.container 
-    display: flex 
-    align-items: center 
-    
+  .wrap
+    .container 
+      display: flex 
+      align-items: center 
+      position: relative
+
 a 
   text-decoration: none
 
@@ -100,16 +115,25 @@ a
 
 @media ( max-width: 900px )
   .section 
-    padding-top: 70px !important
+    // padding-top: 70px !important
 
     .container
       align-items: flex-start
-      height: max-content
+      // height: max-content
 
     &-title 
       font-size: 28px
       margin-bottom: 35px
       margin-top: 20px    
+
+@media ( max-width: 800px )
+  .section 
+    // padding-top: 70px !important
+
+    .container
+      align-items: flex-start
+      height: max-content
+      padding-bottom: 50px
 
 @media ( max-width: 660px )
   .section 
@@ -117,6 +141,9 @@ a
     &-title 
       margin-bottom: 35px
       margin-top: 20px 
-      font-size: 26px   
+      font-size: 26px 
+    .container
+      padding-bottom: 0
+  
 
 

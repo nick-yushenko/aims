@@ -8,9 +8,12 @@ var mySwiper = (window.innerWidth > 800) ? new Swiper('.swiper-container', {
   sensitivity: -100,
 }) : 0;
 
-document.querySelector('.next').addEventListener('click', () => {
-  mySwiper.slideNext()
-})
+document.querySelectorAll('.next').forEach(item => {
+  item.addEventListener('click', () => {
+    mySwiper.slideNext()
+  })
+});
+
 
 if (window.innerWidth <= 800) {
   const sections = document.querySelectorAll('.section')

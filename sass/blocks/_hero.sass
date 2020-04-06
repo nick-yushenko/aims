@@ -1,7 +1,7 @@
 .hero 
   .container 
     flex-wrap: wrap
-    position: relative
+    // position: relative
     align-items: center
     padding-bottom: 10vh
     .logo 
@@ -20,14 +20,7 @@
       font-size: 58px
       line-height: 86px
 
-    .next 
-      position: absolute
-      bottom: 56px
-      left: 0
-      flex-basis: 100%
-      height: max-content
-      width: max-content
-      cursor: pointer
+
 
 @media (max-width: 1250px)
   .hero 
@@ -47,7 +40,6 @@
 
 @media (max-width: 1140px)
   .hero 
-    padding-top: 25vh !important
     .container 
       .logo
         flex-basis: 430px
@@ -76,15 +68,11 @@
         font-size: 40px
         line-height: 60px
 
-@media (max-width: 900px)
-  .hero 
-    .container 
-      .next 
-        margin-top: 80px
+
 
 @media (max-width: 800px)
   .hero 
-    padding-top: 70px !important
+    padding-top: 140px !important
     .container
       align-items: flex-start
       .logo
@@ -105,9 +93,10 @@
         display: none
 @media (max-width: 660px)
   .hero 
-    padding-top: 50px !important
+    padding-top: 120px !important
     .container
       justify-content: flex-start
+      padding-bottom: 20px
       .logo
         margin: 0
         img  
@@ -125,9 +114,10 @@
 
 @media (max-width: 570px)
   .hero 
-    padding-top: 50px !important
+    padding-top: 110px !important
     .container
       justify-content: flex-start
+      padding-bottom: 0
       .logo
         flex-basis: 100%
         margin: 0
@@ -146,7 +136,7 @@
 
 @media (max-width: 500px)
   .hero 
-    padding-top: 50px !important
+    padding-top: 100px !important
     .container
       justify-content: flex-start
       width: 80%
