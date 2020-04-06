@@ -1,0 +1,210 @@
+.what
+  .container 
+    display: block
+  &-block 
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+    .info 
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      justify-content: space-between
+      flex-basis: 100%
+
+      &-item 
+        // border: 1px solid red
+        flex-basis: 30%
+        margin-bottom: 4vh
+        &__title 
+          font-size: 58px
+          font-weight: 500
+          color: $primary
+          display: block
+          line-height: 86px
+        &__subtitle 
+          font-size: 24px
+          line-height: 36px
+          margin-bottom: 5px
+          display: block
+          font-weight: 400         
+        &__descr 
+          font-size: 18px
+          line-height: 26px
+          color: $text
+          font-weight: 300
+      
+        &:nth-child(1)
+          order: 1
+        
+        &:nth-child(2)
+          order: 4
+        
+        &:nth-child(3)
+          order: 2
+        
+        &:nth-child(4)
+          order: 5
+        
+        &:nth-child(5)
+          order: 3
+        
+        &:nth-child(6)
+          order: 6
+
+
+
+@media (max-width: 1250px)
+  .what
+    &-block 
+      .info 
+        flex-basis: 100%
+        &-item 
+          flex-basis: 30%
+          &__title 
+            font-size: 54px
+            line-height: 78px
+          &__subtitle 
+            font-size: 22px
+            line-height: 34px
+          &__descr 
+            font-size: 18px
+            line-height: 24px
+
+
+@media (max-width: 1140px)
+  .what
+    &-block 
+      .info 
+        flex-basis: 100%
+        &-item 
+          flex-basis: 30%
+          &__title 
+            font-size: 40px
+            line-height: 60px
+          &__subtitle 
+            font-size: 18px
+            line-height: 34px
+          &__descr 
+            font-size: 16px
+            line-height: 24px
+
+@media (max-width: 960px)
+  .what
+    &-block 
+      .info 
+        flex-basis: 100%
+        &-item 
+          flex-basis: 30%
+          margin-bottom: 3vh
+          &__title 
+            font-size: 40px
+            line-height: 46px
+          &__subtitle 
+            font-size: 18px
+            line-height: 30px
+          &__descr 
+            font-size: 16px
+            line-height: 24px
+        
+
+@media (max-width: 800px)
+  .what
+    &-block 
+      .info 
+        flex-basis: 100%
+        &-item 
+          flex-basis: 30%
+          margin-bottom: 10px
+          &__title 
+            font-size: 40px
+            line-height: 46px
+          &__subtitle 
+            font-size: 18px
+            line-height: 30px
+          &__descr 
+            font-size: 16px
+            line-height: 24px
+                
+          &:nth-child(1)
+            order: 1
+          
+          &:nth-child(2)
+            order: 2
+          
+          &:nth-child(3)
+            order: 3
+          
+          &:nth-child(4)
+            order: 4
+          
+          &:nth-child(5)
+            order: 5
+          
+          &:nth-child(6)
+            order: 6
+
+@media (max-width: 660px)
+  .what
+    &-block 
+      .info 
+        flex-basis: 100%
+        &-item 
+          flex-basis: 48%
+          margin-bottom: 20px
+          &__title 
+            font-size: 40px
+            line-height: 46px
+          &__subtitle 
+            font-size: 18px
+            line-height: 30px
+          &__descr 
+            font-size: 16px
+            line-height: 24px
+
+@media (max-width: 570px)
+  .what
+    &-block 
+      .info 
+        flex-basis: 100%
+        &-item 
+          flex-basis: 100%
+          margin-bottom: 20px
+          display: flex
+          flex-wrap: wrap
+          &__title 
+            font-size: 40px
+            line-height: 46px
+            width: max-content
+            flex-basis: 60px
+          &__subtitle 
+            flex-basis: calc(100% - 60px)
+            font-size: 18px
+            line-height: 40px
+            display: block
+
+          &__descr 
+            flex-basis: 100%
+            font-size: 16px
+            line-height: 24px
+            padding-left: 60px
+            display: block
+
+@media ( max-width: 425px )
+  .what 
+    &-block 
+      .info 
+        flex-basis: 100%
+        &-item 
+          flex-basis: 100%
+          margin-bottom: 2vh
+          display: flex
+          flex-wrap: wrap
+          &__title 
+            font-size: 40px
+            line-height: 46px
+            width: max-content
+            flex-basis: 60px
+            font-weight: 400
+

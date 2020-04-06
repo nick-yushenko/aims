@@ -1,0 +1,40 @@
+// section 
+//   float: left
+//   display: block
+//   height: 100%
+//   padding: 75px 0 0 0
+//   margin: 0
+
+.swiper
+  &-container 
+    width: 100%
+    height: 100vh
+    padding-top: 70px
+    z-index: 0
+  &-slide 
+    width: 100%
+    height: 100vh
+    padding-top: 18vh
+
+@media ( max-width: 1140px )
+  .swiper
+    &-container 
+      width: 100%
+      height: 100vh
+      padding-top: 70px
+      z-index: 0
+    &-slide 
+      width: 100%
+      height: 100vh
+      padding-top: 15vh
+
+@media ( max-width: 800px )
+  .swiper
+    &-container 
+      height: max-content
+      padding-top: 0
+      z-index: 0
+    &-slide 
+      // width: 100%
+      height: max-content
+      padding-top: 0

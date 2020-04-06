@@ -1,0 +1,204 @@
+.who 
+  .container 
+    display: block
+  &-block 
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+    .descr 
+      flex-basis: 450px
+      font-size: 18px
+      line-height: 26px
+      margin-right: 100px
+      font-weight: 300
+    
+    .info 
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      justify-content: flex-start
+      flex-basis: calc(100% - 550px)
+
+      &-item 
+        // border: 1px solid red
+        flex-basis: 50%
+        margin-bottom: 10px
+        &__title 
+          font-size: 58px
+          font-weight: 500
+          color: $primary
+          display: block
+          position: relative
+          line-height: 86px
+          // margin-bottom: 20px
+          &::after 
+            content: ''
+            position: absolute
+            bottom: 0px 
+            left: 0 
+            width: 60px
+            height: 3px
+            background: $text
+
+        &__descr 
+          font-size: 24px
+          line-height: 40px
+          color: $text
+          font-weight: 300
+
+
+@media (max-width: 1250px)
+  .who 
+
+    &-block 
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+
+      .descr 
+        flex-basis: 420px
+        font-size: 18px
+        line-height: 26px
+        margin-right: 80px
+      .info 
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: flex-start
+        flex-basis: calc(100% - 500px)
+
+        &-item 
+          flex-basis: 49%
+          margin-bottom: 10px
+          &__title 
+            font-size: 56px
+            line-height: 80px
+            &::after 
+              width: 60px
+              height: 3px
+
+          &__descr 
+            font-size: 23px
+            line-height: 30px
+            margin-top: 5px
+            display: block
+
+
+@media (max-width: 1140px)
+  .who 
+
+    &-block 
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+
+      .descr 
+        flex-basis: 400px
+        font-size: 18px
+        line-height: 26px
+        margin-right: 60px
+      .info 
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: flex-start
+        flex-basis: calc(100% - 460px)
+
+        &-item 
+          flex-basis: 49%
+          margin-bottom: 10px
+          &__title 
+            font-size: 50px
+            line-height: 68px
+            &::after 
+              width: 60px
+              height: 3px
+
+          &__descr 
+            font-size: 22px
+            line-height: 30px
+
+@media (max-width: 960px)
+  .who 
+
+    &-block 
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+
+      .descr 
+        flex-basis: 360px
+        font-size: 18px
+        line-height: 26px
+        margin-right: 40px
+      .info 
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: flex-start
+        flex-basis: calc(100% - 400px)
+
+        &-item 
+          flex-basis: 49%
+          margin-bottom: 10px
+          &__title 
+            font-size: 46px
+            line-height: 68px
+            &::after 
+              width: 60px
+              height: 2px
+
+          &__descr 
+            font-size: 18px
+            line-height: 30px
+            margin-top: 3px
+
+@media (max-width: 800px)
+  .who 
+    &-block 
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-wrap: wrap
+      .descr 
+        flex-basis: 100%
+        font-size: 18px
+        line-height: 30px
+        margin-right: 0
+        margin-bottom: 40px
+      .info 
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: space-between
+        flex-basis: 100%
+
+        &-item 
+          flex-basis: 47%
+          margin-bottom: 10px
+          &__title 
+            font-size: 38px
+            line-height: 68px
+
+          &__descr 
+            font-size: 18px
+            line-height: 30px
+
+
+
+
+@media (max-width: 425px)
+  .who 
+    &-block 
+      .descr 
+        line-height: 22px
+        font-size: 16px
+      .info 
+        &-item 
+          flex-basis: 47%
+          margin-bottom: 10px
+          &__title 
+            font-size: 32px
+            line-height: 60px
+            font-weight: 400

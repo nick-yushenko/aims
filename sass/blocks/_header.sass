@@ -1,0 +1,46 @@
+.header 
+  height: 70px
+  display: flex
+  align-items: center
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 3
+
+  &-item 
+    display: flex
+    align-items: center
+    font-size: 18px
+    font-weight: 300
+
+.footer 
+  display: none
+
+@media (max-width: 800px)
+  .header 
+    height: 70px
+    display: flex
+    align-items: center
+    position: static
+    width: 100%
+
+    &-item 
+      display: flex
+      align-items: center
+
+  .footer 
+    display: block 
+    .wrap.container 
+      display: flex 
+      justify-content: center 
+      padding-bottom: 30px
+@media (max-width: 425px)
+  .header 
+    height: max-content
+    padding-left: 10%
+    .wrap 
+      width: 100%
+
+    &-item 
+      font-size: 14px
