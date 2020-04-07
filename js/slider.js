@@ -14,6 +14,12 @@ document.querySelectorAll('.next').forEach(item => {
   })
 });
 
+document.querySelectorAll('.prev').forEach(item => {
+  item.addEventListener('click', () => {
+    mySwiper.slidePrev()
+  })
+});
+
 
 if (window.innerWidth <= 800) {
   const sections = document.querySelectorAll('.section')
