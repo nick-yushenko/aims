@@ -52,30 +52,67 @@ html, body
 
 body 
   position: relative
-.next 
+html 
+  position: relative
+.arrow
+  display: flex
+
   position: absolute
-  bottom: 56px
-  left: 0%
+  top: calc(100% - 50px)
+  left: 0
   flex-basis: 100%
   height: max-content
-  width: max-content
+  width: 300px
   cursor: pointer
   z-index: 5
+  // padding-left: 10px
+  .prev 
+    transform: rotate(180deg) translateY(-1px)
+  svg 
+    width: 150px
+
+@media  ( min-width: 992px )
+  .prev:hover 
+    .prev-line 
+      transform: translateX(6px)
+    .prev-arrow 
+      transform: translateX(12px)
+
+  .next:hover 
+      .next
+        svg 
+          width: 100px
+  
+        &-line 
+          transform: translateX(6px)
+        &-arrow 
+          transform: translateX(12px)
+
 @media (max-width: 800px)
-  .next 
+  .arrow
     display: none
+
 
 .container
   display: flex
   justify-content: space-between
-  align-items: center
+  // align-items: center
 .section 
   .wrap
     .container 
       display: flex 
-      align-items: center 
+      // align-items: center 
+      padding-top: 15vh
       position: relative
 
+@media ( max-width: 800px )
+  .section 
+    .wrap
+      .container 
+        display: flex 
+        // align-items: center 
+        padding-top: 0
+        position: relative
 a 
   text-decoration: none
 
@@ -103,6 +140,7 @@ a
   .btn:hover 
     background-color: darken($primary, 5% )
 
+
 .section 
   .container
     align-items: flex-start
@@ -110,8 +148,19 @@ a
 
   &-title 
     font-size: 32px
-    margin-bottom: 55px
+    margin-bottom: 15vh
     font-weight: 400
+
+@media  ( max-height: 900px )
+  .section 
+    .container
+      align-items: flex-start
+      height: 100%
+
+    &-title 
+      font-size: 32px
+      margin-bottom: 10vh
+      font-weight: 400
 
 @media ( max-width: 900px )
   .section 
