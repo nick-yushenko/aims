@@ -12,6 +12,8 @@
     align-items: stretch
     justify-content: space-between
     flex-wrap: wrap
+    flex-basis: 100% 
+    
     &__item 
       flex-basis: 25%
       display: flex
@@ -19,8 +21,10 @@
       justify-content: center
       margin-bottom: 40px
       img 
-        max-width: 80%
         max-height: 80%
+        width: max-content
+        min-width: max-content
+        max-width: 80%
 
 @media (max-width: 800px)
   .clients 
