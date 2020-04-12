@@ -24,7 +24,6 @@ if (window.innerWidth > 800) {
   const post = document.querySelector('.header-item:nth-child(2)')
 
   mySwiper.on('onSlideChangeStart', () => {
-    console.log(mySwiper.activeIndex)
     if (mySwiper.activeIndex == 0) {
       logo.style.transform = 'translateY(-100px)'
       setTimeout(() => {
@@ -61,5 +60,25 @@ if (window.innerWidth > 800) {
   for (let i = sections.length - 1; i >= 0; i--) {
     document.querySelector('.header').after(sections[i])
   }
+
+
+
+  const logo = document.querySelector('.header-logo')
+
+  logo.style.display = 'none'
+  // Скрытие логтипа на главной для момбилок 
+  window.addEventListener('scroll', function (e) {
+    console.log(pageYOffset + 'px')
+    var h = document.querySelector('.hero').clientHeight
+    console.log("h = " + h)
+
+
+    if (pageYOffset >= h / 2)
+      logo.style.display = 'flex'
+    else
+      logo.style.display = 'none'
+
+
+  });
 
 }
