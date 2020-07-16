@@ -68,9 +68,9 @@ if (window.innerWidth > 800) {
   logo.style.display = 'none'
   // Скрытие логтипа на главной для момбилок 
   window.addEventListener('scroll', function (e) {
-    console.log(pageYOffset + 'px')
+    // console.log(pageYOffset + 'px')
     var h = document.querySelector('.hero').clientHeight
-    console.log("h = " + h)
+    // console.log("h = " + h)
 
 
     if (pageYOffset >= h / 2)
